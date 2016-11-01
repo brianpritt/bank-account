@@ -1,0 +1,15 @@
+.output {
+display: none;
+}
+.input-group {
+  margin: 5px;
+}
+.negBalance{
+  color:red;
+}
+.moe{
+  display: none;
+}
+.biggie{
+  height:200px;
+}

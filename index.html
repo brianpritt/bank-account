@@ -5,15 +5,19 @@
     <link rel="stylesheet" href="css/styles.css">
     <script src="js/jquery-3.1.1.js"></script>
     <script src="js/scripts.js"></script>
-    <title>Epicodus Credit Union</title>
+    <title>Frankie's Loan Sharks</title>
   </head>
   <body>
 
     <div class="container">
-      <h2>Frankie's Loan Sharks</h2>
+      <div class="jumbotron">
+        <h2>Biggie's Loan Sharks</h2>
+        <img src="img/money.jpg" alt="" class="img-responsive img-rounded biggie"/>
+      </div>
+
       <form>
         <div class="row">
-          <div class="well col-md-6">
+          <div class="well col-md-12">
             <label for="name">Please enter your name: </label>
             <input type="text" id="name" class="form-control">
 
@@ -21,7 +25,8 @@
             <input type="number" id="balance" class="form-control" placeholder="Initial Deposit">
             <button type="submit" name="button" class="btn btn-success create-account">Create Account</button>
           </div>
-
+        </div><!--end row-->
+        <div class="row">
           <div class="well col-md-6">
             <div class="input-group"><!-- withdraw -->
               <input type="number" id="withdraw" class="form-control" placeholder="Withdraw Amount">
@@ -33,19 +38,26 @@
             <div class= "input-group"><!--deposit-->
               <input type="number" id="deposit" class="form-control" placeholder="Deposit Amount">
               <span class="input-group-btn">
-                <button type="submit" name="button" class="btn btn-success deposit">Deposit</button>
+                <button type="submit" name="button" class="btn btn-success deposit">   Deposit &nbsp</button>
             </span>
             </div>
           </div>
-        </div>
+
       </form>
-      <div class="row">
-        <div class="well col-md-12">
-          <h3>Balance</h3>
-          <p class="output">
+      <div class="output">
+        <div class="well col-md-6">
+          <h3><span class="customer"></span>'s Balance</h3>
+          <p class="balance">
           </p>
         </div>
       </div>
+      <div class="moe">
+        <h3>
+          Pay back what you me owe first.
+        </h3>
+        <img src="img/moe.jpg" alt="" class="moe"/>
+      </div>
+    </div>
     </div>
 
   </body>
