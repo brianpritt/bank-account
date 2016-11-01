@@ -10,12 +10,12 @@
   <body>
 
     <div class="container">
-      <div class="jumbotron">
+      <div class="main-header">
         <h2>Biggie's Loan Sharks</h2>
         <img src="img/money.jpg" alt="" class="img-responsive img-rounded biggie"/>
       </div>
 
-      <form>
+      <form class="new-account">
         <div class="row">
           <div class="well col-md-12">
             <label for="name">Please enter your name: </label>
@@ -26,29 +26,34 @@
             <button type="submit" name="button" class="btn btn-success create-account">Create Account</button>
           </div>
         </div><!--end row-->
+      </form>
         <div class="row">
           <div class="well col-md-6">
-            <div class="input-group"><!-- withdraw -->
-              <input type="number" id="withdraw" class="form-control" placeholder="Withdraw Amount">
-              <span class="input-group-btn">
+            <form class ="withdraw-amount">
+              <div class="input-group"><!-- withdraw -->
+                <input type="number" id="withdraw" class="form-control" placeholder="Withdraw Amount">
+                <span class="input-group-btn">
                 <button type="submit" name="button" class="btn btn-danger withdraw">Withdraw</button>
-              </span>
-            </div>
+                </span>
+              </div>
+            </form>
+            <form class="deposit-amount">
+              <div class= "input-group"><!--deposit-->
 
-            <div class= "input-group"><!--deposit-->
-              <input type="number" id="deposit" class="form-control" placeholder="Deposit Amount">
-              <span class="input-group-btn">
-                <button type="submit" name="button" class="btn btn-success deposit">   Deposit &nbsp</button>
-            </span>
+                  <input type="number" id="deposit" class="form-control" placeholder="Deposit Amount">
+                  <span class="input-group-btn">
+                    <button type="submit" name="button" class="btn btn-success deposit">   Deposit &nbsp</button>
+                </span>
+              </div>
             </div>
-          </div>
+          </form>
 
       </form>
       <div class="output">
         <div class="well col-md-6">
-          <h3><span class="customer"></span>'s Balance</h3>
-          <p class="balance">
-          </p>
+          <h3><span class="customer"></span>'s Balance:</h3>
+          <h4 class="balance">
+          </h4>
         </div>
       </div>
       <div class="moe">

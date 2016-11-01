@@ -20,7 +20,7 @@ Account.prototype.overdrawn = function(balance) {
 //document ready
 $(document).ready(function(){
   //create account
-  $("form .create-account").click(function(event) {
+  $(".new-account").submit(function(event) {
     event.preventDefault();
 
     var nameInput = $("#name").val();
@@ -35,7 +35,7 @@ $(document).ready(function(){
   });
 
   //deposit funds
-  $("form .deposit").click(function(event) {
+  $(".deposit-amount").submit(function(event) {
     event.preventDefault();
     var depositInput = parseInt($("#deposit").val());
     newAccount.deposit(depositInput);
@@ -49,7 +49,7 @@ $(document).ready(function(){
   });
 
   //withdraw funds
-  $(".withdraw").click(function(event) {
+  $(".withdraw-amount").submit(function(event) {
     event.preventDefault();
     if (!newAccount.overdrawn()){
       var withdrawInput = parseInt($("#withdraw").val());
